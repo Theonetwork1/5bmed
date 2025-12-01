@@ -31,7 +31,7 @@ export const Footer = ({ translations }: FooterProps) => {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2">
               <img 
-                src="/fbmed-logo (300 x 100 px).png" 
+                src="/fbmed-logo-300x100.png" 
                 alt="5BMed Logo" 
                 className="h-10 w-auto"
               />

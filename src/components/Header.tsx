@@ -23,7 +23,7 @@ export const Header = ({ lang, onLangSwitch, translations }: HeaderProps) => {
           {/* Logo */}
           <div className="flex items-center gap-2 flex-shrink-0">
             <img 
-              src="/fbmed-logo (300 x 100 px).png" 
+              src="/fbmed-logo-300x100.png" 
               alt="5BMed Logo" 
               className="h-14 w-auto"
             />
