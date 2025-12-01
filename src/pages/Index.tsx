@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { ProblemSection } from "@/components/ProblemSection";
-import { FeaturesSection } from "@/components/FeaturesSection";
+import { PortalsSection } from "@/components/PortalsSection";
 import { TransformationSection } from "@/components/TransformationSection";
 import { TestimonialsSection } from "@/components/TestimonialsSection";
 import { PricingSection } from "@/components/PricingSection";
@@ -30,7 +30,7 @@ const Index = () => {
       
       <ProblemSection translations={t.problem} />
       
-      <FeaturesSection translations={t.features} />
+      <PortalsSection translations={t.portals} />
       
       <TransformationSection translations={t.transformation} />
       

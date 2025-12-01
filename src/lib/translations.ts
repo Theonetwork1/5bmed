@@ -1,12 +1,19 @@
 export const translations = {
   fr: {
     header: {
+      home: "Accueil",
+      services: "Services",
+      pharmacies: "Pharmacies",
+      about: "À propos",
+      contact: "Contact",
       cta: "Rejoignez 5BMed maintenant",
     },
     hero: {
-      title: "Bienvenue À Votre Nouvelle Vie.",
-      subtitle: "Votre source représente votre personnalité, votre image, votre estime de vous-même: vous faire sourire, c'est ce qui nous tient à cœur.",
-      cta: "Rejoignez 5BMed maintenant",
+      title: "Transformez",
+      subtitle: "les Soins de Santé en Haïti",
+      subtitle2: "Connectez les patients avec les pharmacies grâce à notre marketplace intelligent et autonomisez les entreprises avec notre solution POS complète.",
+      cta: "Trouver des médicaments",
+      cta2: "Rejoindre comme pharmacie",
     },
     problem: {
       title: "Les défis de l'accès aux médicaments en Haïti",
@@ -23,10 +30,19 @@ export const translations = {
           title: "Prix opaques",
           description: "Impossible de comparer les prix facilement pour faire des choix éclairés.",
         },
+        {
+          title: "Falsification de médicaments",
+          description: "Le manque de contrôle strict sur les produits pharmaceutiques.",
+        },
+        {
+          title: "Informations limitées sur la disponibilité",
+          description: "Les clients n'ont pas un accès facile aux informations sur quelles pharmacies ont les médicaments dont ils ont besoin.",
+        },
       ],
     },
     features: {
       title: "Services de haute qualité pour vous",
+      learnMore: "En savoir plus",
       features: [
         {
           title: "Inscription rapide et gratuite",
@@ -54,6 +70,29 @@ export const translations = {
         },
       ],
     },
+    portals: {
+      title: "Choisissez Votre Portail de Santé",
+      patient: {
+        title: "Portail Patient",
+        description: "Trouvez des médicaments partout en Haïti",
+        features: [
+          "Rechercher des médicaments par nom",
+          "Comparer les prix instantanément",
+          "Commander avec MonCash/NatCash",
+        ],
+        cta: "Accéder au Portail",
+      },
+      pharmacy: {
+        title: "Pharmacy POS",
+        description: "Solution commerciale complète",
+        features: [
+          "Gestion des stocks",
+          "Traitement des ventes",
+          "Analyses et rapports",
+        ],
+        cta: "Rejoindre le Réseau",
+      },
+    },
     transformation: {
       title: "La transformation 5BMed",
       before: {
@@ -79,6 +118,7 @@ export const translations = {
     },
     testimonials: {
       title: "Ce que disent nos utilisateurs",
+      stats: "Plus de 1000 pharmacies et clients satisfaits à travers Haïti",
       testimonials: [
         {
           name: "Marie L.",
@@ -100,6 +140,11 @@ export const translations = {
           role: "Utilisateur régulier",
           content: "Application intuitive et sécurisée, parfaite pour les besoins d'Haïti.",
         },
+        {
+          name: "Sofia D.",
+          role: "Maman satisfaite",
+          content: "5BMed se yon benediksyon pou mwen! Mwen ka jwenn medikaman timoun mwen yo san mwen pa bezwen kite kay la. Mèsi anpil!",
+        },
       ],
     },
     pricing: {
@@ -108,6 +153,7 @@ export const translations = {
       free: "Gratuit",
       forCustomers: "Pour les clients",
       forPharmacies: "Pour les pharmacies",
+      popular: "Populaire",
       features: [
         "Inscription gratuite",
         "Recherche illimitée",
@@ -121,22 +167,54 @@ export const translations = {
         "Gestion des produits",
         "Accès aux commandes",
         "Support dédié",
-        "Formation incluse",
+        "Pourcentage abordable",
       ],
       cta: "Commencer maintenant",
     },
     footer: {
-      rights: "Tous droits réservés.",
+      descriptionLine1: "Connecter les patients avec les médicaments essentiels en Haïti.",
+      descriptionLine2: "Rendre les soins de santé plus accessibles, une ordonnance à la fois.",
+      contact: {
+        email: "info@5bmed.ht",
+        phone: "+509 1234-5678",
+        address: "Port-au-Prince, Haïti",
+      },
+      forPatients: {
+        title: "Pour les Patients",
+        links: [
+          "Trouver des médicaments",
+          "Localiser les pharmacies",
+          "Commander en ligne",
+          "Suivre les commandes",
+        ],
+      },
+      legal: {
+        title: "Légal & Support",
+        links: [
+          "Conditions générales",
+          "Politique de confidentialité",
+          "Politique de remboursement",
+          "Avertissement médical",
+        ],
+      },
+      copyright: "© 2025 5BMed. Tous droits réservés. | Politique de Confidentialité | Conditions de Service",
     },
   },
   ht: {
     header: {
+      home: "Akèy",
+      services: "Sèvis",
+      pharmacies: "Famasi",
+      about: "Sou nou",
+      contact: "Kontakte",
       cta: "Enskri nan 5BMed kounye a",
     },
     hero: {
-      title: "Byenveni Nan Nouvo Vi Ou.",
-      subtitle: "Sous ou reprezante pèsonalite ou, imaj ou, konsiderasyon ou pou tèt ou: fè ou souri, se sa ki nan kè nou.",
-      cta: "Enskri nan 5BMed kounye a",
+      title: "Transfòme",
+      subtitle: "Swen Sante ann Ayiti",
+      subtitle2: "Konekte pasyan yo ak famasi yo gras ak marketplace entelijan nou an epi bay biznis yo plis pouvwa ak solisyon POS konplè nou an.",
+      cta: "Jwenn medikaman",
+      cta2: "Rejwenn kòm famasi",
     },
     problem: {
       title: "Defi pou jwenn medikaman ann Ayiti",
@@ -147,20 +225,29 @@ export const translations = {
         },
         {
           title: "Pèt tan",
-          description: "Deplase plizyè fwa nan fanmasi san garanti medikaman yo disponib.",
+          description: "Deplase plizyè fwa nan famasi san garanti medikaman yo disponib.",
         },
         {
           title: "Pri pa klè",
-          description: "Enposib pou konpare pri yo fasil pou fè bon chwa.",
+          description: "Enposib pou konpare pri yo, difisil pou fè bon chwa.",
+        },
+        {
+          title: "Falsifikasyon medikaman",
+          description: "Mank kontwòl strik sou pwodwi famasetik.",
+        },
+        {
+          title: "Enfòmasyon limite sou disponiblite medikaman",
+          description: "Kliyan yo pa gen aksè fasil ak enfòmasyon sou ki famasi ki gen medikaman yo bezwen.",
         },
       ],
     },
     features: {
       title: "Sèvis kalite pou ou",
+      learnMore: "Konnen plis",
       features: [
         {
           title: "Enskri rapid e gratis",
-          description: "Kreye kont ou nan kèk minit san peye anyen, kit ou kliyan oswa fanmasi patne.",
+          description: "Kreye kont ou nan kèk minit san peye anyen, kit ou kliyan oswa famasi patne.",
         },
         {
           title: "Achte sou entènèt fasil",
@@ -172,17 +259,40 @@ export const translations = {
         },
         {
           title: "Livrezon oswa ranmase",
-          description: "Chwazi pou yo livre medikaman yo oswa ranmase yo nan fanmasi dirèkteman.",
+          description: "Chwazi pou yo livre medikaman yo oswa ranmase yo nan famasi dirèkteman.",
         },
         {
-          title: "Fanmasi verifye",
-          description: "Jwenn aksè nan yon rezo fanmasi apwouve e serye toupatou ann Ayiti.",
+          title: "Famasi verifye",
+          description: "Jwenn aksè nan yon rezo famasi apwouve e serye toupatou ann Ayiti.",
         },
         {
           title: "Sipò kliyan 24/7",
           description: "Ekip nou disponib nenpòt lè pou reponn kesyon ou yo epi ede ou.",
         },
       ],
+    },
+    portals: {
+      title: "Chwazi Pòtal Sante Ou",
+      patient: {
+        title: "Pòtal Pasyan",
+        description: "Jwenn medikaman toupatou ann Ayiti",
+        features: [
+          "Chèche medikaman pa non",
+          "Konpare pri enstantane",
+          "Kòmande ak MonCash/NatCash",
+        ],
+        cta: "Aksede Pòtal la",
+      },
+      pharmacy: {
+        title: "POS Famasi",
+        description: "Solisyon biznis konplè",
+        features: [
+          "Jesyon envantè",
+          "Tretman vant",
+          "Analiz ak rapò",
+        ],
+        cta: "Rejwenn Rezo a",
+      },
     },
     transformation: {
       title: "Transfòmasyon 5BMed la",
@@ -209,6 +319,7 @@ export const translations = {
     },
     testimonials: {
       title: "Sa itilizatè nou yo di",
+      stats: "Plis pase 1000 famasi ak kliyan satisfè toupatou ann Ayiti",
       testimonials: [
         {
           name: "Marie L.",
@@ -217,7 +328,7 @@ export const translations = {
         },
         {
           name: "Dr. Jean P.",
-          role: "Patizan fanmasi",
+          role: "Patizan famasi",
           content: "Platfòm serye ak yon ekselan sèvis kliyan disponib 24/7. Mwen rekòmande anpil!",
         },
         {
@@ -230,6 +341,11 @@ export const translations = {
           role: "Itilizatè regilye",
           content: "Aplikasyon entuitif e sekirize, pafè pou bezwen Ayiti.",
         },
+        {
+          name: "Sofia D.",
+          role: "Manman satisfè",
+          content: "5BMed se yon benediksyon pou mwen! Mwen ka jwenn medikaman timoun mwen yo san mwen pa bezwen kite kay la. Mèsi anpil!",
+        },
       ],
     },
     pricing: {
@@ -237,7 +353,8 @@ export const translations = {
       subtitle: "Enskri gratis pou tout moun",
       free: "Gratis",
       forCustomers: "Pou kliyan yo",
-      forPharmacies: "Pou fanmasi yo",
+      forPharmacies: "Pou famasi yo",
+      popular: "Popilè",
       features: [
         "Enskri gratis",
         "Rechèch san limit",
@@ -247,16 +364,41 @@ export const translations = {
       ],
       pharmacyFeatures: [
         "Enskri gratis",
-        "Pwofil fanmasi verifye",
+        "Pwofil famasi verifye",
         "Jesyon pwodwi",
         "Aksè nan kòmand yo",
         "Sipò dedye",
-        "Fòmasyon enkli",
+        "Pousantaj abòdab",
       ],
       cta: "Kòmanse kounye a",
     },
     footer: {
-      rights: "Tout dwa rezève.",
+      descriptionLine1: "Konekte pasyan yo ak medikaman esansyèl ann Ayiti.",
+      descriptionLine2: "Fè swen sante pi aksib, yon preskripsyon nan yon moman.",
+      contact: {
+        email: "info@5bmed.ht",
+        phone: "+509 1234-5678",
+        address: "Pòtoprens, Ayiti",
+      },
+      forPatients: {
+        title: "Pou Pasyan Yo",
+        links: [
+          "Jwenn medikaman",
+          "Jwenn famasi yo",
+          "Kòmande sou entènèt",
+          "Swiv kòmand yo",
+        ],
+      },
+      legal: {
+        title: "Legal & Sipò",
+        links: [
+          "Kondisyon jeneral",
+          "Règleman sou konfidansyalite",
+          "Politik rembousman",
+          "Averisman medikal",
+        ],
+      },
+      copyright: "© 2025 5BMed. Tout dwa rezève. | Règleman Konfidansyalite | Kondisyon Sèvis",
     },
   },
 };
