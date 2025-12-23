@@ -88,13 +88,13 @@ export const TestimonialsSection = ({ translations }: TestimonialsSectionProps) 
   }, [api]);
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 px-4">
             {translations.title}
           </h2>
-          <p className="text-lg text-primary font-semibold mb-2">
+          <p className="text-base sm:text-lg text-primary font-semibold mb-2 px-4">
             {translations.stats}
           </p>
         </div>
@@ -108,28 +108,28 @@ export const TestimonialsSection = ({ translations }: TestimonialsSectionProps) 
               loop: true,
             }}
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-2 sm:-ml-4">
               {translations.testimonials.map((testimonial, index) => (
-                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
-                  <Card className="p-6 bg-card hover:shadow-xl transition-all duration-300 border-border relative h-full flex flex-col">
-                    <Quote className="h-8 w-8 text-primary/20 absolute top-4 right-4" />
-                    <div className="flex gap-1 mb-4">
+                <CarouselItem key={index} className="pl-2 sm:pl-4 basis-full sm:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                  <Card className="p-4 sm:p-5 md:p-6 bg-card hover:shadow-xl transition-all duration-300 border-border relative h-full flex flex-col">
+                    <Quote className="h-6 w-6 sm:h-8 sm:w-8 text-primary/20 absolute top-3 right-3 sm:top-4 sm:right-4" />
+                    <div className="flex gap-1 mb-3 sm:mb-4">
                       {[...Array(5)].map((_, i) => (
-                        <Star key={i} className="h-4 w-4 fill-secondary text-secondary" />
+                        <Star key={i} className="h-3 w-3 sm:h-4 sm:w-4 fill-secondary text-secondary" />
                       ))}
                     </div>
-                    <p className="text-muted-foreground mb-6 leading-relaxed italic flex-grow">
+                    <p className="text-sm sm:text-base text-muted-foreground mb-4 sm:mb-6 leading-relaxed italic flex-grow">
                       "{testimonial.content}"
                     </p>
-                    <div className="flex items-center gap-3 mt-auto">
-                      <Avatar className="h-10 w-10 flex-shrink-0">
-                        <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-primary-foreground font-semibold">
+                    <div className="flex items-center gap-2 sm:gap-3 mt-auto">
+                      <Avatar className="h-8 w-8 sm:h-10 sm:w-10 flex-shrink-0">
+                        <AvatarFallback className="bg-gradient-to-br from-primary to-secondary text-primary-foreground font-semibold text-xs sm:text-sm">
                           {getInitials(testimonial.name)}
                         </AvatarFallback>
                       </Avatar>
                       <div className="min-w-0">
-                        <p className="font-semibold text-card-foreground truncate">{testimonial.name}</p>
-                        <p className="text-sm text-muted-foreground truncate">{testimonial.role}</p>
+                        <p className="font-semibold text-sm sm:text-base text-card-foreground truncate">{testimonial.name}</p>
+                        <p className="text-xs sm:text-sm text-muted-foreground truncate">{testimonial.role}</p>
                       </div>
                     </div>
                   </Card>
@@ -138,7 +138,7 @@ export const TestimonialsSection = ({ translations }: TestimonialsSectionProps) 
             </CarouselContent>
             <CarouselPrevious className="hidden md:flex -left-12" />
             <CarouselNext className="hidden md:flex -right-12" />
-            <div className="flex justify-center gap-2 mt-6">
+            <div className="flex justify-center gap-2 mt-4 sm:mt-6">
               {translations.testimonials.map((_, index) => (
                 <button
                   key={index}

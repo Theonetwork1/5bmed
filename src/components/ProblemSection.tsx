@@ -77,11 +77,11 @@ export const ProblemSection = ({ translations }: ProblemSectionProps) => {
   }, [api]);
   
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <AlertCircle className="h-12 w-12 mx-auto mb-4 text-destructive" />
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <AlertCircle className="h-8 w-8 sm:h-10 sm:w-10 md:h-12 md:w-12 mx-auto mb-4 text-destructive" />
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 px-4">
             {translations.title}
           </h2>
         </div>
@@ -95,15 +95,15 @@ export const ProblemSection = ({ translations }: ProblemSectionProps) => {
               loop: true,
             }}
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-2 sm:-ml-4">
               {translations.problems.map((problem, index) => {
                 const Icon = icons[index];
                 return (
-                  <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                    <Card className="p-8 text-center bg-card hover:shadow-lg transition-shadow border-border h-full">
-                      <Icon className="h-10 w-10 mx-auto mb-4 text-destructive/70" />
-                      <h3 className="text-xl font-semibold mb-3 text-card-foreground">{problem.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed">{problem.description}</p>
+                  <CarouselItem key={index} className="pl-2 sm:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
+                    <Card className="p-4 sm:p-6 md:p-8 text-center bg-card hover:shadow-lg transition-shadow border-border h-full">
+                      <Icon className="h-8 w-8 sm:h-10 sm:w-10 mx-auto mb-3 sm:mb-4 text-destructive/70" />
+                      <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-card-foreground">{problem.title}</h3>
+                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed">{problem.description}</p>
                     </Card>
                   </CarouselItem>
                 );
@@ -111,7 +111,7 @@ export const ProblemSection = ({ translations }: ProblemSectionProps) => {
             </CarouselContent>
             <CarouselPrevious className="hidden md:flex -left-12" />
             <CarouselNext className="hidden md:flex -right-12" />
-            <div className="flex justify-center gap-2 mt-6">
+            <div className="flex justify-center gap-2 mt-4 sm:mt-6">
               {translations.problems.map((_, index) => (
                 <button
                   key={index}

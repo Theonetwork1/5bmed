@@ -78,10 +78,10 @@ export const FeaturesSection = ({ translations }: FeaturesSectionProps) => {
   }, [api]);
   
   return (
-    <section className="py-20 bg-background">
+    <section className="py-12 sm:py-16 md:py-20 bg-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
+        <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-4 px-4">
             {translations.title}
           </h2>
         </div>
@@ -95,23 +95,23 @@ export const FeaturesSection = ({ translations }: FeaturesSectionProps) => {
               loop: true,
             }}
           >
-            <CarouselContent className="-ml-4">
+            <CarouselContent className="-ml-2 sm:-ml-4">
               {translations.features.map((feature, index) => {
                 const Icon = icons[index];
                 return (
-                  <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
-                    <Card className="p-8 bg-card hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border group h-full flex flex-col">
-                      <div className="h-14 w-14 rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                        <Icon className="h-7 w-7 text-primary-foreground" />
+                  <CarouselItem key={index} className="pl-2 sm:pl-4 basis-full sm:basis-1/2 lg:basis-1/3">
+                    <Card className="p-4 sm:p-6 md:p-8 bg-card hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-border group h-full flex flex-col">
+                      <div className="h-12 w-12 sm:h-14 sm:w-14 rounded-xl sm:rounded-2xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center mb-4 sm:mb-6 group-hover:scale-110 transition-transform">
+                        <Icon className="h-6 w-6 sm:h-7 sm:w-7 text-primary-foreground" />
                       </div>
-                      <h3 className="text-xl font-semibold mb-3 text-card-foreground">{feature.title}</h3>
-                      <p className="text-muted-foreground leading-relaxed mb-6 flex-grow">{feature.description}</p>
+                      <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-card-foreground">{feature.title}</h3>
+                      <p className="text-sm sm:text-base text-muted-foreground leading-relaxed mb-4 sm:mb-6 flex-grow">{feature.description}</p>
                       <Button 
                         variant="ghost" 
-                        className="w-fit text-primary hover:text-primary/80 p-0 h-auto group/btn"
+                        className="w-fit text-primary hover:text-primary/80 p-0 h-auto group/btn text-sm sm:text-base"
                       >
                         {translations.learnMore}
-                        <ArrowRight className="ml-2 h-4 w-4 group-hover/btn:translate-x-1 transition-transform" />
+                        <ArrowRight className="ml-2 h-3 w-3 sm:h-4 sm:w-4 group-hover/btn:translate-x-1 transition-transform" />
                       </Button>
                     </Card>
                   </CarouselItem>
@@ -120,7 +120,7 @@ export const FeaturesSection = ({ translations }: FeaturesSectionProps) => {
             </CarouselContent>
             <CarouselPrevious className="hidden md:flex -left-12" />
             <CarouselNext className="hidden md:flex -right-12" />
-            <div className="flex justify-center gap-2 mt-6">
+            <div className="flex justify-center gap-2 mt-4 sm:mt-6">
               {Array.from({ length: Math.ceil(translations.features.length / 3) }).map((_, index) => (
                 <button
                   key={index}
