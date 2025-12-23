@@ -1,73 +1,122 @@
-# Welcome to your Lovable project
+# 5BMed - Plateforme de Pharmacie en Ligne pour Haïti
 
-## Project info
+5BMed est une plateforme innovante qui connecte les patients avec les pharmacies en Haïti, facilitant l'accès aux médicaments et aux matériels médicaux essentiels. La plateforme offre également une solution POS complète pour automatiser la gestion des pharmacies.
 
-**URL**: https://lovable.dev/projects/cdbb5427-bddd-4a67-9b55-10aa01586a0d
+## 🎯 Mission
 
-## How can I edit this code?
+Garantir au bon patient le bon médicament, au bon dosage, au bon moment et par la bonne voie, en rendant l'accès aux traitements plus simple, rapide et sécurisé partout en Haïti, tout en automatisant les pharmacies grâce à une solution POS complète et moderne.
 
-There are several ways of editing your application.
+## ✨ Fonctionnalités
 
-**Use Lovable**
+### Pour les Patients
+- 🔍 Recherche de médicaments et matériels médicaux
+- 💰 Comparaison de prix en temps réel
+- 💳 Paiement sécurisé (MonCash/NatCash)
+- 🚚 Livraison 24/24 - 7/7
+- 📍 Localisation des pharmacies
+- 📦 Suivi des commandes
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cdbb5427-bddd-4a67-9b55-10aa01586a0d) and start prompting.
+### Pour les Pharmacies
+- 📊 Solution POS complète et moderne
+- 📦 Gestion des stocks
+- 💼 Traitement des ventes
+- 📈 Analyses et rapports
+- 🌐 Intégration au réseau 5BMed
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🛠️ Technologies
 
-**Use your preferred IDE**
+- **Frontend**: React 18 + TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **Routing**: React Router v6
+- **Build Tool**: Vite
+- **Icons**: Lucide React
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📦 Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Prérequis
+- Node.js 18+ et npm (ou bun)
 
-Follow these steps:
+### Étapes d'installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# 1. Cloner le repository
+git clone <repository-url>
+cd 5bmed
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# 2. Installer les dépendances
+npm install
+# ou
+bun install
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 3. Lancer le serveur de développement
 npm run dev
+# ou
+bun run dev
 ```
 
-**Edit a file directly in GitHub**
+Le site sera accessible sur `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Scripts Disponibles
 
-**Use GitHub Codespaces**
+- `npm run dev` - Lance le serveur de développement
+- `npm run build` - Construit l'application pour la production
+- `npm run build:dev` - Construit en mode développement
+- `npm run preview` - Prévisualise le build de production
+- `npm run lint` - Vérifie le code avec ESLint
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 📁 Structure du Projet
 
-## What technologies are used for this project?
+```
+src/
+├── components/          # Composants React
+│   ├── ui/             # Composants UI réutilisables (shadcn/ui)
+│   ├── Header.tsx       # En-tête avec navigation
+│   ├── Footer.tsx       # Pied de page
+│   ├── HeroSection.tsx  # Section héro
+│   └── ...
+├── pages/              # Pages de l'application
+│   ├── Index.tsx       # Page d'accueil
+│   └── NotFound.tsx     # Page 404
+├── lib/                # Utilitaires et configurations
+│   ├── translations.ts # Traductions FR/HT
+│   └── utils.ts         # Fonctions utilitaires
+└── assets/             # Images et ressources statiques
+```
 
-This project is built with:
+## 🌍 Internationalisation
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+L'application supporte deux langues :
+- **Français (FR)** - Langue par défaut
+- **Créole Haïtien (HT)** - Langue secondaire
 
-## How can I deploy this project?
+Les traductions sont gérées dans `src/lib/translations.ts`.
 
-Simply open [Lovable](https://lovable.dev/projects/cdbb5427-bddd-4a67-9b55-10aa01586a0d) and click on Share -> Publish.
+## 🎨 Design System
 
-## Can I connect a custom domain to my Lovable project?
+Le projet utilise un design system cohérent avec :
+- **Couleur primaire**: Bleu (#00A3E0)
+- **Couleur secondaire**: Vert (#00D9A5)
+- **Typographie**: Inter
+- **Espacements**: Système cohérent basé sur Tailwind
 
-Yes, you can!
+## 📝 Contribution
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Créer une branche pour votre fonctionnalité
+2. Faire vos modifications
+3. Tester localement
+4. Créer une pull request
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📄 Licence
+
+© 2025 5BMed. Tous droits réservés.
+
+## 📧 Contact
+
+- **Email**: info@5bmed.ht
+- **Téléphone**: +509 1234-5678
+- **Adresse**: Port-au-Prince, Haïti
+
+---
+
+**Développé avec ❤️ pour améliorer l'accès aux soins de santé en Haïti**

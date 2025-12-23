@@ -23,9 +23,9 @@ export const Header = ({ lang, onLangSwitch, translations }: HeaderProps) => {
           {/* Logo */}
           <div className="flex items-center gap-2 flex-shrink-0">
             <img 
-              src="/fbmed-logo-300x100.png" 
+              src="/logo5bmed.png" 
               alt="5BMed Logo" 
-              className="h-14 w-auto"
+              className="h-36 w-auto"
             />
           </div>
           
@@ -33,25 +33,25 @@ export const Header = ({ lang, onLangSwitch, translations }: HeaderProps) => {
           <nav className="hidden md:flex items-center gap-6 flex-1 justify-center">
             <Link 
               to="/" 
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-primary hover:underline transition-colors"
             >
               {translations.home}
             </Link>
             <Link 
               to="/services" 
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-primary hover:underline transition-colors"
             >
               {translations.services}
             </Link>
             <Link 
               to="/about" 
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-primary hover:underline transition-colors"
             >
               {translations.about}
             </Link>
             <Link 
               to="/contact" 
-              className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
+              className="text-sm font-medium text-muted-foreground hover:text-primary hover:underline transition-colors"
             >
               {translations.contact}
             </Link>

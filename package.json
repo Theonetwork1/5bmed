@@ -1,7 +1,8 @@
 {
-  "name": "vite_react_shadcn_ts",
+  "name": "5bmed",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "description": "Plateforme de pharmacie en ligne pour Haïti - Connecter les patients avec les pharmacies",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -11,8 +11,8 @@ export const translations = {
     hero: {
       title: "Transformez",
       subtitle: "les Soins de Santé en Haïti",
-      subtitle2: "Connectez les patients avec les pharmacies grâce à notre marketplace intelligent et autonomisez les entreprises avec notre solution POS complète.",
-      cta: "Trouver des médicaments",
+      subtitle2: "Garantir au bon patient le bon médicament, au bon dosage, au bon moment et par la bonne voie, en rendant l'accès aux traitements plus simple, rapide et sécurisé partout en Haïti, tout en automatisant les pharmacies grâce à une solution POS complète et moderne.",
+      cta: "Trouver un produit",
       cta2: "Rejoindre comme pharmacie",
     },
     problem: {
@@ -79,6 +79,7 @@ export const translations = {
           "Rechercher des médicaments par nom",
           "Comparer les prix instantanément",
           "Commander avec MonCash/NatCash",
+          "Livraison 24/24 - 7/7",
         ],
         cta: "Accéder au Portail",
       },
@@ -172,8 +173,8 @@ export const translations = {
       cta: "Commencer maintenant",
     },
     footer: {
-      descriptionLine1: "Connecter les patients avec les médicaments essentiels en Haïti.",
-      descriptionLine2: "Rendre les soins de santé plus accessibles, une ordonnance à la fois.",
+      descriptionLine1: "Connecter les patients avec les médicaments et les matériels médicaux essentiels en Haïti.",
+      descriptionLine2: "Livraison 24/24 - 7/7",
       contact: {
         email: "info@5bmed.ht",
         phone: "+509 1234-5678",
@@ -182,7 +183,7 @@ export const translations = {
       forPatients: {
         title: "Pour les Patients",
         links: [
-          "Trouver des médicaments",
+          "Trouver un produit",
           "Localiser les pharmacies",
           "Commander en ligne",
           "Suivre les commandes",
@@ -212,7 +213,7 @@ export const translations = {
     hero: {
       title: "Transfòme",
       subtitle: "Swen Sante ann Ayiti",
-      subtitle2: "Konekte pasyan yo ak famasi yo gras ak marketplace entelijan nou an epi bay biznis yo plis pouvwa ak solisyon POS konplè nou an.",
+      subtitle2: "Garanti bon pasyan yo bon medikaman, nan bon dozaj, nan bon moman ak nan bon fason, lè nou rann aksè tretman yo pi senp, rapid ak sekirize toupatou ann Ayiti; tout pandan nou ap otomatize famasi yo gras ak yon solisyon POS konplè ak modèn.",
       cta: "Jwenn medikaman",
       cta2: "Rejwenn kòm famasi",
     },
@@ -224,7 +225,7 @@ export const translations = {
           description: "Pasyan yo gen pwoblèm pou jwenn medikaman yo rapid, sitou nan ijans.",
         },
         {
-          title: "Pèt tan",
+          title: "Pèdi tan",
           description: "Deplase plizyè fwa nan famasi san garanti medikaman yo disponib.",
         },
         {
@@ -233,7 +234,7 @@ export const translations = {
         },
         {
           title: "Falsifikasyon medikaman",
-          description: "Mank kontwòl strik sou pwodwi famasetik.",
+          description: "Manke kontwòl estrik sou pwodwi famasetik.",
         },
         {
           title: "Enfòmasyon limite sou disponiblite medikaman",
@@ -254,7 +255,7 @@ export const translations = {
           description: "Chèche, konpare epi kòmande medikaman ou yo fasil lakay ou.",
         },
         {
-          title: "Peman sekirize",
+          title: "Pèyman sekirize",
           description: "Peye an sekirite ak MonCash oswa NatCash, solisyon peman lokal ki an sekirite.",
         },
         {
@@ -272,23 +273,24 @@ export const translations = {
       ],
     },
     portals: {
-      title: "Chwazi Pòtal Sante Ou",
+      title: "Chwazi Opsyon Paw la",
       patient: {
-        title: "Pòtal Pasyan",
+        title: "Espas Pasyan",
         description: "Jwenn medikaman toupatou ann Ayiti",
         features: [
           "Chèche medikaman pa non",
-          "Konpare pri enstantane",
+          "Konpare pri yo",
           "Kòmande ak MonCash/NatCash",
+          "Livrezon 24/24 - 7/7",
         ],
-        cta: "Aksede Pòtal la",
+        cta: "Antre la",
       },
       pharmacy: {
         title: "POS Famasi",
         description: "Solisyon biznis konplè",
         features: [
           "Jesyon envantè",
-          "Tretman vant",
+          "Tretman lavant",
           "Analiz ak rapò",
         ],
         cta: "Rejwenn Rezo a",
@@ -302,8 +304,8 @@ export const translations = {
           "Difisil pou chèche medikaman disponib",
           "Deplase plizyè fwa san garanti",
           "Enposib pou konpare pri",
-          "Pèt tan ak lajan",
-          "Strès nan sitiyasyon ijans",
+          "Pèdi tan ak lajan",
+          "Estrès nan sitiyasyon ijans",
         ],
       },
       after: {
@@ -358,8 +360,8 @@ export const translations = {
       features: [
         "Enskri gratis",
         "Rechèch san limit",
-        "Konparazon pri",
-        "Peman sekirize",
+        "Konparezon pri",
+        "Pèyman sekirize",
         "Sipò 24/7",
       ],
       pharmacyFeatures: [
@@ -373,8 +375,8 @@ export const translations = {
       cta: "Kòmanse kounye a",
     },
     footer: {
-      descriptionLine1: "Konekte pasyan yo ak medikaman esansyèl ann Ayiti.",
-      descriptionLine2: "Fè swen sante pi aksib, yon preskripsyon nan yon moman.",
+      descriptionLine1: "Konekte pasyan yo ak medikaman oswa materyèl medikal an Ayiti.",
+      descriptionLine2: "Livrezon 24/24 - 7/7",
       contact: {
         email: "info@5bmed.ht",
         phone: "+509 1234-5678",
@@ -394,8 +396,8 @@ export const translations = {
         links: [
           "Kondisyon jeneral",
           "Règleman sou konfidansyalite",
-          "Politik rembousman",
-          "Averisman medikal",
+          "Politik ranbousman",
+          "Avètisman medikal",
         ],
       },
       copyright: "© 2025 5BMed. Tout dwa rezève. | Règleman Konfidansyalite | Kondisyon Sèvis",

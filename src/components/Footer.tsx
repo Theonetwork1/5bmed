@@ -31,13 +31,27 @@ export const Footer = ({ translations }: FooterProps) => {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-2">
               <img 
-                src="/fbmed-logo-300x100.png" 
+                src="/logo5bmed.png" 
                 alt="5BMed Logo" 
-                className="h-10 w-auto"
+                className="h-16 w-auto"
               />
             </div>
             <p className="text-sm text-white/80">
-              {translations.descriptionLine1}
+              {translations.descriptionLine1.includes("médicaments") ? (
+                <>
+                  {translations.descriptionLine1.split("médicaments ")[0]}médicaments
+                  <br />
+                  {translations.descriptionLine1.split("médicaments ")[1]}
+                </>
+              ) : translations.descriptionLine1.includes("medikaman") ? (
+                <>
+                  {translations.descriptionLine1.split("medikaman ")[0]}medikaman
+                  <br />
+                  {translations.descriptionLine1.split("medikaman ")[1]}
+                </>
+              ) : (
+                translations.descriptionLine1
+              )}
             </p>
             <p className="text-sm text-white/80">
               {translations.descriptionLine2}
@@ -66,7 +80,7 @@ export const Footer = ({ translations }: FooterProps) => {
                 <Link 
                   key={index}
                   to="#" 
-                  className="text-sm text-white/80 hover:text-white transition-colors"
+                  className="text-sm text-white/80 hover:text-white hover:underline transition-colors"
                 >
                   {link}
                 </Link>
@@ -82,7 +96,7 @@ export const Footer = ({ translations }: FooterProps) => {
                 <Link 
                   key={index}
                   to="#" 
-                  className="text-sm text-white/80 hover:text-white transition-colors"
+                  className="text-sm text-white/80 hover:text-white hover:underline transition-colors"
                 >
                   {link}
                 </Link>

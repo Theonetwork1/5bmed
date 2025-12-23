@@ -26,7 +26,7 @@ export const PortalsSection = ({ translations }: PortalsSectionProps) => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-foreground mb-4">
-            Choisissez Votre <span className="text-primary">Portail de Santé</span>
+            {translations.title}
           </h2>
         </div>
 
@@ -105,4 +105,3 @@ export const PortalsSection = ({ translations }: PortalsSectionProps) => {
     </section>
   );
 };
-
