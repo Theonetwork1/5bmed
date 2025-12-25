@@ -95,8 +95,8 @@ Les traductions sont gérées dans `src/lib/translations.ts`.
 ## 🎨 Design System
 
 Le projet utilise un design system cohérent avec :
-- **Couleur primaire**: Bleu (#00A3E0)
-- **Couleur secondaire**: Vert (#00D9A5)
+- **Couleur primaire**: Bleu (#2994ff)
+- **Couleur secondaire**: Vert (#1ee699)
 - **Typographie**: Inter
 - **Espacements**: Système cohérent basé sur Tailwind
 
@@ -119,4 +119,4 @@ Le projet utilise un design system cohérent avec :
 
 ---
 
-**Développé avec ❤️ pour améliorer l'accès aux soins de santé en Haïti**
+**Développé pour améliorer l'accès aux soins de santé en Haïti**
