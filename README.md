@@ -1,4 +1,4 @@
-# 5BMed - Plateforme de Pharmacie en Ligne pour Haïti
+# 5BMed - Plateforme de recherche de Pharmacie et d'achat de médicaments et de matériels médicaux en Ligne en Haïti
 
 5BMed est une plateforme innovante qui connecte les patients avec les pharmacies en Haïti, facilitant l'accès aux médicaments et aux matériels médicaux essentiels. La plateforme offre également une solution POS complète pour automatiser la gestion des pharmacies.
 
